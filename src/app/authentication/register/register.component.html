@@ -1,0 +1,213 @@
+<body>
+  
+    <div class="block">
+        <div class="container container--max--lg">
+            <div class="row ">
+
+                <div class="col-md-9 d-flex  mt-md-0 mx-auto">
+                    <div class="card flex-grow-1 mb-0 ml-0 ml-lg-3 mr-0 mr-lg-4">
+                        <div class="card-body card-body--padding--2">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <i routerLink="" class="fa fa-arrow-left text-secondary" aria-hidden="true"></i>
+
+                                </div>
+                                <div class="col-md-4"> <div class="text-center my-5">
+                                    <a routerLink="/" class="logo">
+    
+                                        <div class="logo__image">
+    
+    
+                                            <img src="../../../assets/img/logo1.png" alt="" style="width:168px;
+                                            ">
+    
+                                        </div>
+                                    </a>
+                                </div></div>
+                                <div class="col-md-4"></div>
+                            </div>
+
+    <mat-horizontal-stepper [linear]="isLinear" [@.disabled]="true"  #stepper="matHorizontalStepper">
+        <form [formGroup]="registerForm">
+        <mat-step >
+        
+              
+            <div class="basic-info ">
+                <div class="form-group mt-5">
+                    <label for="signup-name">{{ "INPUT_NAME_LABEL"|translate }}</label>
+                    <input id="signup-name" type="text" class="form-control"
+                        placeholder="prince kwame" formControlName="name">
+               
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="signup-email">{{ 'INPUT_EMAIL_ADDRESS_LABEL'|translate }}</label>
+                    <input id="signup-email" type="email" class="form-control"
+                        placeholder="customer@example.com" formControlName="email">
+                   
+                </div>
+                <div class="form-group mt-3 ">
+                    <label for="signup-mobile_number">{{ 'INPUT_PHONE_NUMBER_LABEL'|translate }}</label>
+                    <div class="wrapper ">
+                        <ngx-intl-tel-input [cssClass]="'form-group form-control'"
+                            [preferredCountries]="preferredCountries" [enableAutoCountrySelect]="true"
+                            [enablePlaceholder]="true" [searchCountryFlag]="true" 
+                            [searchCountryField]="[ SearchCountryField.Iso2,SearchCountryField.Name
+                             ]" [selectFirstCountry]="false" 
+                            [selectedCountryISO]="CountryISO.Ghana" [phoneValidation]="true"
+                            [separateDialCode]="separateDialCode"
+                            [numberFormat]="PhoneNumberFormat.National" name="mobileNumber"
+                            formControlName="mobile_number">
+                        </ngx-intl-tel-input>
+
+                      
+                    </div>
+
+                </div>
+
+                <div class="row ">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="signup-password">{{ 'INPUT_PASSWORD_LABEL'|translate }}</label>
+                            <input id="signup-password" type="password" class="form-control"
+                                [placeholder]="'INPUT_PASSWORD_PLACEHOLDER'|translate"
+                                formControlName="password">
+                            <div class="invalid-feedback">
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="signup-confirm">{{ 'INPUT_PASSWORD_REPEAT_LABEL'|translate
+                                }}</label>
+                            <input id="signup-confirm" type="password" class="form-control"
+                                [placeholder]="'INPUT_PASSWORD_REPEAT_PLACEHOLDER'|translate"
+                                formControlName="password_confirmation">
+                         
+                        </div>
+                    </div>
+
+                </div>
+
+             
+             </div>
+                      
+           
+            <div class="text-center mt-5">
+              <button class="text-center btn btn-primary" mat-button matStepperNext>Next</button>
+            </div>
+      
+        </mat-step>
+        <mat-step >
+        
+            <div class="company_info" >
+
+                <div class="form-group mt-5">
+                    <label for="signup-businessname">{{ "INPUT_BUSINESS_NAME_LABEL"|translate }}</label>
+                    <input id="signup-businessname" type="text" class="form-control"
+                        placeholder="Enter your business name" formControlName="business_name">
+                 
+                </div> 
+        
+
+          <div class="row ">
+
+            <div class="form-group ">
+                <label for="" >{{ "INPUT_BUSINESS_TYPE_LABEL"|translate }}</label>
+              <select class="form-group form-select form-control" formControlName='business_category_id'
+              aria-label=".form-select-sm example">
+              <option selected>Open this select menu</option>
+              <option [ngValue]="business.id" *ngFor='let business of businessCategoryData'>{{business.name}}
+
+            </select>
+      
+          </div>
+          </div>
+
+
+          <div class="row ">
+            <label for="" >{{ "INPUT_COUNTRY_LABEL"|translate }}</label>
+            <div class="form-group ">
+             
+              <select class="form-select form-control " formControlName='country_id' 
+        >
+              <option selected >Open this select menu</option>
+              <option [ngValue]="country.id" *ngFor='let country of countryData'>{{country.name}}
+
+            </select>
+
+          </div>
+          </div>
+
+          <div class="form-group mt-4">
+            <label for="signup-website">{{ "INPUT_WEBSITE"|translate }}</label>
+            <input id="signup-webite" type="text" class="form-control"
+                placeholder="Enter your website url" formControlName="website">
+          
+        </div>
+
+
+     
+            </div>
+            <div class="text-center mt-5">
+              <button class="btn btn-secondary" mat-button matStepperPrevious>Back</button>
+              <button class="btn btn-primary" mat-button matStepperNext>Next</button>
+            </div>
+
+        </mat-step>
+        <mat-step>
+          <div>
+            <div class="row mb-3 px-2">
+                      
+                <label for="" class="">{{ "INPUT_LOGO"|translate }} </label>
+                <div class="image_preview mb-2 text-center" >
+                    <img [src]="icon_imageData" alt="logo" class="image" *ngIf="icon_imageData">
+                  </div>
+                <input type="file"class="form-control" (change)="OnfileChange($event)" placeholder="Upload file" accept="*">
+
+              </div>
+
+
+              <div class="row mb-3 px-2">
+               
+                <label for="" class="">   {{ "INPUT_BANNER"|translate }}</label>
+
+                <div class="image_preview mb-2 text-center" >
+                    <img [src]="banner_imageData" alt="banner"*ngIf="banner_imageData" class="image">
+                </div>
+                <input type="file" class="form-control"(change)="Change($event)" placeholder="Upload file" accept="*">
+
+              </div>
+
+              <div class="row mb-3 px-2">
+                
+                <label for="" class="">  {{ "INPUT_DOCUMENT"|translate }}</label>
+               
+                <input class="form-control" type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".pdf">
+
+              </div>
+
+            
+          
+           </div>
+               
+          <div class="text-center ">
+            <button class="btn btn-light mr-2 " mat-button matStepperPrevious>Back</button>
+            <button class="btn btn-success" mat-button (click)="register()">Submit</button>
+          </div>
+        </mat-step>
+
+        </form>
+      </mat-horizontal-stepper>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>

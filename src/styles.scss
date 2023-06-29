@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+
+
+
+
+
+.owl-carousel .owl-dot, .owl-carousel .owl-nav .owl-next{
+ float: right !important;
+ margin-right:-30px;
+}
+
+.owl-carousel .owl-dot, .owl-carousel  .owl-nav .owl-prev {
+    float: left !important;
+    margin-left:-50px;
+}
+
+
+.ngx-pagination .current {
+    padding: 0.1875rem 0.625rem;
+     background:rgb(255, 78, 8) !important ;
+    color: #fefefe;
+    cursor: default;
+}
+
+
+
+
+.mat-horizontal-stepper-header-container {
+    
+    display: none !important;
+
+
+}
+
+

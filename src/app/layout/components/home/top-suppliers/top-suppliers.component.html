@@ -1,0 +1,38 @@
+<section class="our-blog">
+    <div class="container">
+        <div class="row mt-3 pt-5">
+            <div class="col">
+                <p class="text-uppercase font-weight-semibold mb-1 text-color-primary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100"><span class="line-pre-title bg-color-primary"></span>Our Key Offers</p>
+                <h2 class="text-color-secondary font-weight-bold text-capitalize mb-4 custom-letter-spacing-2 custom-text-1 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">A Range of Exciting and Endless Offers </h2>
+                <p>We have a wide range of businesses across the agricultural sector. The products are quality, best to use, affordable and timeless.                 </p>
+            </div>
+        </div>
+        <div class="row mb-3 pb-5 mt-4">
+          
+                     <!-- Topic Cards -->
+
+    <owl-carousel-o [options]="customOptions1">
+
+        <ng-container  *ngFor="let vendor of businessData">
+          <ng-template class="slide" carouselSlide [id]="vendor.id">
+            <div class="category ">
+                <a  class="text-decoration-none">
+                    <div class="thumb-info custom-thumb-info-style-1 mb-3">
+                        <!-- <div class="custom-thumb-info-icon bg-dark">
+                            <img src="assets/img/demos/industry-factory/icons/icon-electrical-tower.png" class="img-fluid" alt="" />
+                        </div> -->
+                        <div class="thumb-info-wrapper">
+                            <img src="assets/img/demos/industry-factory/categories/category-4.jpg" style="width:97%; height: 140px;" class="img-fluid" alt="" />
+                        </div>
+                    </div>
+                </a>
+                <p class="text-center mb-0"><a  class="text-color-dark text-color-hover-primary text-decoration-none text-2">{{vendor.name}}</a></p>
+            </div>
+          </ng-template>
+        </ng-container>
+    
+      </owl-carousel-o>  
+        </div>
+        
+    </div>
+</section>

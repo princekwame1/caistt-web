@@ -1,0 +1,166 @@
+{
+    "TEXT_WORKING_HOURS": "24/7小时的客户服务",
+    "TEXT_YOUR_ENQUIRY_IS_EMPTY": "您的查询是空的!",
+
+    "TEXT_YOUR_WISHLIST_IS_EMPTY": "你没有喜欢的产品",
+
+    "FEATURE_TITLE1": "抵达目标市场",
+    "FEATURE_TITLE2": "市场渗透率",
+    "FEATURE_TITLE3": "强大的贸易",
+    "FEATURE_BODY1": "一旦你在这个平台上注册，你的目标市场就会到达。与非洲和中国这个高度工业化的国家进行贸易，非常方便。",
+    "FEATURE_BODY2": "将你的农产品渗透到正确的市场。我们将你的农业企业推销给工业国家，以迅速出售你的产品。",
+    "FEATURE_BODY3": "强大的贸易 与我们的潜在客户和顾客建立一个坚实的市场结构。无论你在哪里，我们都会建立可持续的贸易体系。 ",
+
+    "OUR_SERVICES": "我们的服务",
+
+    "ABOUT_TITLE": "我们做什么？",
+    "ABOUT_DESCRIPTION": "这个平台帮助你创建自己的数字商店，你可以在那里销售你所有的农产品，从食品、储存设施、农业机械等。",
+    "ABOUT_TITLE1": "创建你自己的数字市场",
+    "ABOUT_TITLE2": "世界级的出口和进口服务",
+    "ABOUT_TITLE3": "连接非洲企业与中国投资者",
+    "ABOUT_TITLE4": "推销农业综合企业产品",
+    "ABOUT_TITLE5": "农业技术",
+    "ABOUT_DESCRIPTION1": "这个平台帮助你创建自己的数字商店，你可以在那里销售你的所有农产品，从食品、储存设施、农业机械等。",
+    "ABOUT_DESCRIPTION2": "我们协助将您的农产品运往国际市场。通过我们的进口服务，我们确保了一个绿色通道的进口系统，从而使货物的清关更加容易。",
+    "ABOUT_DESCRIPTION3": "通过我们无缝的中国-非洲贸易，工业国中国的投资者可以与非洲企业会面，使贸易活动商业化。",
+    "ABOUT_DESCRIPTION4": "我们有一个农业企业专家团队，向中国推介非洲农业企业。在您的家中，您就可以与潜在的客户联系起来。",
+    "ABOUT_DESCRIPTION5": "我们专注于为你提供最好的农业技术，以提高农场的生产力。进入一个更倾向于技术的农业企业系统，给你最好的感觉，从而保证你有最好的技术经验。",
+
+
+    "SLIDER_1": "在世界范围内建立正确的市场联系和通道",
+    "SLIDER_DESCRIPTION_1": "我们优先考虑您的业务的可见性!",
+    "SLIDER_DETAILS_1": "帮助你的企业脱颖而出的最佳市场方法",
+    "SLIDER_2": "让你的企业在全球范围内得到发展",
+    "SLIDER_DESCRIPTION_2": "我们优先考虑您的业务的可见性!",
+    "SLIDER_DETAILS_2": "专业人员帮助你设计成功!",
+
+    "CONTACT_INFO1": "你是否需要你的企业达到你的",
+    "CONTACT_INFO2": "迅速进入目标市场？",
+    "CONTACT_INFO3": "现在就在我们这里注册你的农业综合企业吧!",
+    "CONTACT_SECTION_BUTTON": "开始你的进程",
+
+    "FOOTER_DESCRIPTION": "CAISTT是一个电子商务网站，专门为支持整个价值链上的农业企业接触其目标受众而设计。在这个平台上发布广告的产品为企业提供了向中国出口产品的机会，与农业企业和中国投资者建立伙伴关系，并保证投资回报。",
+    "BUTTON_READ": "阅读更多",
+    "BUTTON_GET_STARTED": "开始吧",
+    "BUTTON_DOWNLOAD": "现在下载",
+    "BUTTON_FIND_OUT": "了解更多",
+
+    "WHATWEDO_TITLE": "我们做什么",
+    "WHATWEDO_TITLE1": "我们所服务的一些行业",
+    "WHATWEDO_TITLE2": "我们做什么",
+
+    
+"APP_DOWNLOAD_TITLE":"可用于安卓和苹果手机的应用程序",
+"APP_DOWNLOAD_DESCRIPTION":"也可在亚马逊应用商店和画廊应用商店购买。",
+"APP_DOWNLOAD_TITLE2":"入门",
+"APP_DOWNLOAD_DESCRIPTION2":"请按照以下步骤在CAISTT注册您的企业。我们没有地理上的限制，现在就开始吧!",
+"APP_DOWNLOAD_DESCRIPTION3":"这些步骤将使我们核实和确认你的业务，",
+"APP_DOWNLOAD_DESCRIPTION4":"从而使你 ",
+"APP_DOWNLOAD_DESCRIPTION5":"在数字市场上。 ",
+
+
+"APP-SIGNUP":"报名参加",
+"APP-CONNECT":"连接 ",
+"APP-SALE":"销售",
+
+"BUTTON_BACK_TO_LIST": "返回列表",
+"BUTTON_BLOCK_FINDER_SEARCH": "搜索",
+"BUTTON_CANCEL": "取消",
+"BUTTON_CHANGE": "变化",
+"BUTTON_CHECKOUT": "结账",
+"BUTTON_CLEAR_ALL": "清除所有",
+"BUTTON_CLEAR_LIST": "清单",
+
+"BUTTON_EDIT_PROFILE": "编辑个人资料",
+"BUTTON_FILTERS": "过滤器",
+"BUTTON_GO_TO_HOMEPAGE": "转到主页",
+"BUTTON_LOGIN": "登录",
+
+"BUTTON_QUICKVIEW": "快速查看",
+"BUTTON_REGISTER": "注册",
+"BUTTON_REMOVE": "Remove",
+"BUTTON_RESET": "Reset",
+
+"BUTTON_SAVE": "拯救",
+
+
+"BUTTON_CONTINUE":"继续",
+"BUTTON_SUBMIT":"提交",
+
+"INPUT_DOCUMENT": "请上传您的营业执照和其他证明文件 ",
+  "INPUT_BANNER": "请上传您的企业旗帜",
+  "INPUT_LOGO": "请上传您的企业标志 ",
+
+
+  "INPUT_COMPANY_LABEL": "公司名称",
+  "INPUT_COMPANY_PLACEHOLDER": ".",
+  "INPUT_COUNTRY_LABEL": "业务地点",
+  "INPUT_COUNTRY_PLACEHOLDER": "选择一个国家...",
+
+  "INPUT_CREATE_ACCOUNT_LABEL": "创建一个账户？",
+  "INPUT_EMAIL_ADDRESS_LABEL": "电子邮件地址",
+  "INPUT_EMAIL_ADDRESS_PLACEHOLDER": "username@example.com",
+  "INPUT_BUSINESS_NAME_LABEL": "企业法定名称",
+  "INPUT_BUSINESS_TYPE_LABEL":"业务类别",
+  "INPUT_FIRST_NAME_LABEL": "名字",
+  "INPUT_NAME_LABEL": " 命名",
+  "INPUT_FIRST_NAME_PLACEHOLDER": "马克",
+  "INPUT_LAST_NAME_LABEL": "姓氏",
+  "INPUT_LAST_NAME_PLACEHOLDER": "Twain",
+  "INPUT_LIMIT_LABEL": "显示",
+  "INPUT_ONLY_EXACT_FIT_PARTS_LABEL": "只有完全适合的零件才可以：",
+
+  "INPUT_ORDER_NOTES_PLACEHOLDER": "",
+  "INPUT_PASSWORD_CURRENT_LABEL": "当前密码",
+  "INPUT_PASSWORD_CURRENT_PLACEHOLDER": "",
+  "INPUT_PASSWORD_LABEL": "密码",
+  "INPUT_PASSWORD_NEW_LABEL": "新密码",
+  "INPUT_PASSWORD_NEW_PLACEHOLDER": "",
+  "INPUT_PASSWORD_PLACEHOLDER": "密语",
+  "INPUT_PASSWORD_REPEAT_LABEL": "重复密码",
+  "INPUT_PASSWORD_REPEAT_PLACEHOLDER": "",
+  "INPUT_PHONE_NUMBER_LABEL": "电话",
+  "INPUT_PHONE_NUMBER_PLACEHOLDER": "+1 999 888 7777",
+ 
+ 
+  
+  "LINK_ABOUT_US": "关于我们",
+  "LINK_ACCOUNT_ADDRESSES": "地址",
+  "LINK_ACCOUNT_DASHBOARD": "仪表板",
+
+
+  "LINK_ENQUIRY": "征求意见",
+  "LINK_COMPARE": "比较",
+  "LINK_CONTACT_US": "联系我们",
+  "LINK_CONTACTS": "联系我们 ",
+  "LINK_CREATE_ACCOUNT": "创建一个账户",
+  "LINK_EDIT_ADDRESS": "编辑地址",
+  "LINK_FORGOT": "忘记了？",
+  "LINK_FORGOT_PASSWORD": "忘记密码？",
+  "LINK_REGISTER": "没有账户吗？",
+
+  "LINK_HOME": "首页",
+  "LINK_ORDER_HISTORY": "订购记录",
+  "LINK_WISH_LIST": "愿望清单",
+  "LINK_WISHLIST": "愿望清单",
+
+
+  "HEADER_CHECKOUT": "Checkout",
+  "HEADER_COMPARE": "Compare",
+  "HEADER_COMPARE_EMPTY_SUBTITLE": "你的比较列表中没有任何产品。<br>进入主页开始浏览我们的商店。",
+  "HEADER_COMPARE_EMPTY_TITLE": "比较列表是空的",
+  "HEADER_CONTACT_US": "联系我们",
+ 
+  "HEADER_EDIT_ADDRESS": "Edit Address",
+  "HEADER_EDIT_PROFILE": "Edit Profile",
+
+ 
+  "HEADER_WISHLIST": "愿望清单",
+  "HEADER_WISHLIST_EMPTY_SUBTITLE": "你的愿望清单中没有产品。<br>进入主页开始浏览我们的商店。",
+  "HEADER_WISHLIST_EMPTY_TITLE": "愿望清单是空的",
+ 
+  "HEADER_FORGET_PASSWORD":"忘记密码",
+  "INPUT_WEBSITE": "网站"
+
+
+}

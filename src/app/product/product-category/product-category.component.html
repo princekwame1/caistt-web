@@ -1,0 +1,192 @@
+<section class="page-header page-header-modern custom-page-header bg-color-quaternary">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-12 order-2 order-md-1 align-self-center p-static">
+                <h1 class="font-weight-bold text-9 text-color-secondary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100">{{categoryData?.name}}</h1>
+            </div>
+           
+        </div>
+    </div>
+</section>
+
+
+<div class="text-center" *ngIf="loading">
+  <div class="lds-ripple " ><div></div><div></div></div>
+</div>
+
+<div role="main" class="main shop pt-4" *ngIf="!loading" >
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-3 order-2 order-lg-1 bg-color py-5 ">
+        <aside class="sidebar">
+          <form  method="get">
+            <div class="input-group mb-3 pb-1">
+              <input class="form-control text-1" placeholder="Search..." name="s" id="s" type="text">
+              <button type="submit" class="btn btn-dark text-1 p-2"><i class="fas fa-search m-2"></i></button>
+            </div>
+          </form>
+          <h5 class="font-weight-semi-bold pt-3">Categories</h5>
+          <ul class="nav nav-list flex-column">
+            <li class="nav-item"><a class="nav-link" href="#">Arts & Crafts</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Automotive</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Baby</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Books</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Eletronics</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Women's Fashion</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Men's Fashion</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Health & Household</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Home & Kitchen</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Military Accessories</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Movies & Television</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sports & Outdoors</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Tools & Home Improvement</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Toys & Games</a></li>
+          </ul>
+        
+          <div class="row mb-5">
+            <div class="col">
+              <h5 class="font-weight-semi-bold pt-5">Top Rated Products</h5>
+              <div class="product row row-gutter-sm align-items-center mb-4">
+                <div class="col-5 col-lg-5">
+                  <div class="product-thumb-info border-0">
+                    <a >
+                      <div class="product-thumb-info-image">
+                        <img alt="" class="img-fluid" src="assets/img/products/product-grey-6.jpg">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-7 col-lg-7 ms-md-0 ms-lg-0 ps-lg-1 pt-1">
+                  <a href="#" class="d-block text-uppercase text-decoration-none text-color-default text-color-hover-primary line-height-1 text-0 mb-2">hat</a>
+                  <h3 class="text-3-5 font-weight-medium font-alternative text-transform-none line-height-3 mb-0"><a href="shop-product-sidebar-right.html" class="text-color-dark text-color-hover-primary text-decoration-none">Blue Hat</a></h3>
+                  <div title="Rated 5 out of 5">
+                    <input type="text" class="d-none" value="5" title="" data-plugin-star-rating data-plugin-options="{'displayOnly': true, 'color': 'dark', 'size':'xs'}">
+                  </div>
+                  <p class="price text-4 mb-0">
+                    <span class="sale text-color-dark font-weight-semi-bold">$299,00</span>
+                    <span class="amount">$289,00</span>
+                  </p>
+                </div>
+              </div>
+              <div class="product row row-gutter-sm align-items-center mb-4">
+                <div class="col-5 col-lg-5">
+                  <div class="product-thumb-info border-0">
+                    <a >
+                      <div class="product-thumb-info-image">
+                        <img alt="" class="img-fluid" src="assets/img/products/product-grey-8.jpg">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-7 col-lg-7 ms-md-0 ms-lg-0 ps-lg-1 pt-1">
+                  <a href="#" class="d-block text-uppercase text-decoration-none text-color-default text-color-hover-primary line-height-1 text-0 mb-2">accessories</a>
+                  <h3 class="text-3-5 font-weight-medium font-alternative text-transform-none line-height-3 mb-0"><a href="shop-product-sidebar-right.html" class="text-color-dark text-color-hover-primary text-decoration-none">Adventurer Bag</a></h3>
+                  <div title="Rated 5 out of 5">
+                    <input type="text" class="d-none" value="5" title="" data-plugin-star-rating data-plugin-options="{'displayOnly': true, 'color': 'dark', 'size':'xs'}">
+                  </div>
+                  <p class="price text-4 mb-0">
+                    <span class="sale text-color-dark font-weight-semi-bold">$99,00</span>
+                    <span class="amount">$79,00</span>
+                  </p>
+                </div>
+              </div>
+              <div class="product row row-gutter-sm align-items-center mb-4">
+                <div class="col-5 col-lg-5">
+                  <div class="product-thumb-info border-0">
+                    <a >
+                      <div class="product-thumb-info-image">
+                        <img alt="" class="img-fluid" src="assets/img/products/product-grey-9.jpg">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-7 col-lg-7 ms-md-0 ms-lg-0 ps-lg-1 pt-1">
+                  <a href="#" class="d-block text-uppercase text-decoration-none text-color-default text-color-hover-primary line-height-1 text-0 mb-2">sports</a>
+                  <h3 class="text-3-5 font-weight-medium font-alternative text-transform-none line-height-3 mb-0"><a class="text-color-dark text-color-hover-primary text-decoration-none">Baseball Ball</a></h3>
+                  <div title="Rated 5 out of 5">
+                    <input type="text" class="d-none" value="5" title="" data-plugin-star-rating data-plugin-options="{'displayOnly': true, 'color': 'dark', 'size':'xs'}">
+                  </div>
+                  <p class="price text-4 mb-0">
+                    <span class="sale text-color-dark font-weight-semi-bold">$399,00</span>
+                    <span class="amount">$299,00</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <div class="col-lg-9 order-1 order-lg-2">
+
+        <div class="masonry-loader " >
+          <div class="row products product-thumb-info-list" >
+
+            <div class="col-sm-6 col-lg-4" *ngFor="let product of categoryProduct">
+              <div class="product mb-0">
+                <div class="product-thumb-info border-0 mb-3">
+
+
+
+                  <div class="addtocart-btn-wrapper">
+                    <a  class="text-decoration-none addtocart-btn mb-1" title="Add to Cart" (click)="Add2Basket(product.id)">
+                      <i class="icons icon-bag"></i>
+                    </a>
+                    <a  class="text-decoration-none addtocart-btn mt-1" title="Add to wishlist" (click)="Add2Wishlist(product.id)">
+                      <i class="far fa-heart"></i>
+                    </a>
+                  </div>
+
+                  <a  class="quick-view bg-secondary text-uppercase font-weight-semibold text-2">
+                    QUICK VIEW
+                  </a>
+
+                  <a >
+                    <div class="product-thumb-info-image">
+                      <img alt="" class="img-fluid" src="assets/img/products/product-grey-1.jpg">
+
+                    </div>
+                  </a>
+                </div>
+                <div class=" justify-content-between  text-center">
+                  <div>
+                    <a href="#" class="d-block text-uppercase text-decoration-none text-color-default text-color-hover-primary line-height-1 text-0 mb-1">{{product.category.name}}</a>
+                    <h3 class="text-3-5 font-weight-medium font-alternative text-transform-none line-height-3 mb-0"><a  class="text-color-dark text-color-hover-primary" [routerLink]="'/product/product/'+ product.id">{{product.name}}</a></h3>
+                  </div>
+                  <!-- <a href="#" class="text-decoration-none text-color-default text-color-hover-dark text-4"><i class="far fa-heart"></i></a> -->
+                </div>
+                <!-- <div title="Rated 5 out of 5">
+                  <input type="text" class="d-none" value="5" title="" data-plugin-star-rating data-plugin-options="{'displayOnly': true, 'color': 'default', 'size':'xs'}">
+                </div> -->
+                <p class="price  text-center text-3 mb-3">
+                  <span class="sale text-color-dark font-weight-semi-bold">$69,00-</span>
+                  <span >$59,00</span>
+                </p>
+              </div>
+            </div>
+
+     
+
+          </div>
+          <!-- <div class="row mt-4">
+            <div class="col">
+              <ul class="pagination float-end">
+                <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
+              </ul>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
