@@ -25,6 +25,9 @@ import { AgriTechComponent } from '../service/agri-tech/agri-tech.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FaqComponent } from '../others/faq/faq.component';
+import { UserDashboardModule } from './user-dashboard/user-dashboard.module';
+import { ChatComponent } from './chat/chat.component';
+import { TermsAndpolicyComponent } from './others/terms-andpolicy/terms-andpolicy.component';
 
 @NgModule({
   declarations: [
@@ -46,13 +49,16 @@ import { FaqComponent } from '../others/faq/faq.component';
     OfftakeServiceComponent,
     InterTradeComponent,
     AgriTechComponent,
-    FaqComponent
+    FaqComponent,
+    ChatComponent,
+    TermsAndpolicyComponent
   ],
   imports: [
     CommonModule,
     LayoutRoutingModule,
     CarouselModule,
-    TranslateModule
+    TranslateModule,
+    UserDashboardModule
   ]
 })
 export class LayoutModule { }

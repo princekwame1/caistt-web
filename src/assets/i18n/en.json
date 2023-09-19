@@ -24,13 +24,15 @@
   "ABOUT_DESCRIPTION5": "We focus on providing you with the best agricultural technology to boost productivity on the farm. Moving into a more technology-inclined system of agribusiness gives you the best feel, hence assure you with the best technological experience.",
   
   
-  "SLIDER_1": "BUILDING THE RIGHT MARKET CONNECTIONS AND ACCESS WORLDWIDE",
+  "SLIDER_1": "Reliable Market Penetration ",
   "SLIDER_DESCRIPTION_1": "We Prioritize the Visibility of Your Business!",
-  "SLIDER_DETAILS_1": "The best market approaches to help your business stand out",
+  "SLIDER_DETAILS_1": "Welcome to the ultimate hub for agricultural trade. Our B2B e-commerce platform brings together a diverse array of agricultural products, offering you unmatched convenience and choice.",
   "SLIDER_2": "GET YOUR BUSINESS ON THE GLOBAL MAP",
-  "SLIDER_DESCRIPTION_2": "We Prioritize the Visibility of Your Business!",
-  "SLIDER_DETAILS_2": "Professional helping you design success!",
- 
+  "SLIDER_DESCRIPTION_2": "Your One-Stop Destination for All Agricultural Products",
+  "SLIDER_DETAILS_2": "Welcome to the ultimate hub for agricultural trade. Our B2B e-commerce platform brings together a diverse array of agricultural products, offering you unmatched convenience and choice.",
+  "SLIDER_4": "Application for all Agri-business",
+  "SLIDER_DESCRIPTION_4": "One Shop One Trading Space",
+  "SLIDER_DETAILS_4": " Our platform is designed to provide you with convenience and choice. From staple crops to specialized machinery, from organic produce to innovative solutions – it's all here, waiting for you.",
  
   "CONTACT_INFO1": "DO YOU NEED YOUR BUSINESS TO REACH YOUR",
   "CONTACT_INFO2": "TARGET MARKET SWIFTLY?",
@@ -38,8 +40,10 @@
   "CONTACT_SECTION_BUTTON": "START YOUR PROCESS",
   "FOOTER_DESCRIPTION": "CAISTT is an e-commerce website specially designed to support agribusinesses across the value chain to reach their target audience. Products advertised on this platform affords businesses the opportunity to export their products to China, build partnerships with agribusinesses and Chinese investors as well as guaranteeing Return on Investment.",
   
-  
-  
+  "TESTIMONIAL_1":"I've been in agribusiness for years, and finding a reliable platform to source all my agricultural needs has always been a challenge. That was until I discovered this digital platform. It's a game-changer! I can now explore a wide range of products, connect with trusted suppliers, and make purchases hassle-free. ",
+  "TESTIMONIAL_2":"As a supplier of agricultural products, expanding my reach was a priority. Joining this digital platform was a turning point for my business. The exposure to a wider network of buyers has been invaluable. The platform's user-friendly interface and efficient communication tools have made transactions smooth and convenient. I've built strong relationships with buyers from different regions, all thanks to this platform.",
+  "TESTIMONIAL_3":"I was skeptical about transitioning my agribusiness to an online platform, but this digital marketplace proved me wrong. It's more than just a place to trade; it's a community of agribusiness enthusiasts who understand the industry's unique challenges. The platform's comprehensive product listings and secure payment system give me peace of mind. I've connected with reliable sellers and expanded my product range, resulting in increased sales and growth",
+
   "BUTTON_READ": "read more",
   "BUTTON_GET_STARTED": "Get Started",
   "BUTTON_DOWNLOAD": "Download Now",
@@ -174,7 +178,11 @@
 
   "HEADER_YOUR_ORDER": "Your Order",
   "HEADER_FORGET_PASSWORD":"Forget Password",
-  "INPUT_WEBSITE": "Website"
+  "INPUT_WEBSITE": "Website",
 
 
+
+  "TESTIMONIAL_TITLE":"Successful stories ",
+  "TESTIMONIAL_DESCRIPTION":"Our clients review talk about how our B2B has revolutionized the way they connect with bussineees to collaborate and thrive in today’s fast-paced digital landscape. Since its launch, our app has achieved unparalleled success, empowering countless clients to streamline their operations, enhance efficiency, and achieve sustainable growth. Through features such as real-time messaging, file sharing and project management tools, our app eliminates communication gaps and enhances operational efficiency. Our track record of a successful clientele based proves these results.  ",
+  "TESTIMONIAL_SUBTITLE":"Our Testimonial"
 }

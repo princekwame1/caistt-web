@@ -1,8 +1,59 @@
-.product{
-    width: 97%;
+
+.page-body{
+    width: 80%;
+    margin:40px  10%;
 }
 
-.primary-image{
-    width: 94%;
-    height: 480px;
+.limit
+ {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5; /* number of lines to show */
+                line-clamp: 5; 
+        -webkit-box-orient: vertical;
+     }
+     
+.first_session{
+    height: 50vh !important;
+}
+
+
+.vendor_details{
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .first_session{
+        height: unset !important;
+    }
+
+    .vendor_details{
+        display: none;
+    }
+
+    .page-body{
+    width: 100%;
+    margin:0px  ;
+}
+  }
+
+
+
+
+
+  .product{
+    width: 98%;
+  }
+
+
+  .price-list{
+    display: flex;
+
+  }
+
+
+  .img-thumbnail {
+   
+ border: none !important;
+
 }

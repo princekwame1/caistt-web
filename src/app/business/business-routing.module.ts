@@ -5,8 +5,8 @@ import { SingleBusinessComponent } from './single-business/single-business.compo
 import { BusinessListComponent } from './business-list/business-list.component';
 
 const routes: Routes = [{ path: '', component: BusinessComponent },
-{path:'single-business', component:SingleBusinessComponent},
-{path:'business-list', component:BusinessListComponent}
+{path:':name', component:SingleBusinessComponent},
+{path:'list', component:BusinessListComponent}
 ];
 
 @NgModule({

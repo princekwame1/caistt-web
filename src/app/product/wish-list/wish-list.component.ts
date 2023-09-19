@@ -18,7 +18,7 @@ constructor(
 ){
 
 
-  console.log('hi')
+
 }
 
 
@@ -26,7 +26,7 @@ ngOnInit(){
 
 
 this.favData=this.route.snapshot.data['wishlist'].data
-  // this.getFavorite();
+console.log(this.favData)
 
   if ($.isFunction($.fn['themePluginAnimate']) && $('[data-appear-animation]').length) {
     theme.fn.dynIntObsInit( '[data-appear-animation], [data-appear-animation-svg]', 'themePluginAnimate', theme.PluginAnimate.defaults );
@@ -63,8 +63,14 @@ this.enquiryService.fetchWishList().subscribe(response=>{
 
 
 add2Enquiry(id:any){
-  this.enquiryService.addQuotebasket(id).subscribe(response=>{
-console.log(response)
-  })
+
+  console.log(id)
+//   this.enquiryService.addQuotebasket(id).subscribe(response=>{
+// if(response.success){
+//   this.delete4rmFav(id)
+// }
+//   })
 }
+
+
 }

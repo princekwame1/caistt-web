@@ -32,12 +32,16 @@
                     
                                       
                                     </li>
+                                   
                                     <li  class="px-0 font-weight-normal align-items-center text-color-secondary d-none d-xl-flex">
-                                       
-                                        <select class="form-select form-select-sm mb-3 select-link" #language (change)="translateSite(language.value)">
+                                        <span routerLink="/terms" class="text-color-secondary text-color-hover-primary text-decoration-none">
+                                      
+                                            How to join US
+                                         </span>
+                                        <!-- <select class="form-select form-select-sm mb-3 select-link" #language (change)="translateSite(language.value)">
                                             <option *ngFor="let localization of translateService.getLangs()" [value]="localization"  [selected]="localization === translateService.currentLang">{{localization}}</option>
 
-                                          </select>
+                                          </select> -->
                                     </li>
                                
                                 </ul>
@@ -67,7 +71,7 @@
                                               {{"LINK_HOME" | translate}}
                                             </a>
                                         </li>
-                                        <li class="dropdown-secondary mx-4">
+                                        <li class="dropdown-secondary">
                                             <a class="nav-link"  routerLink='about-us' routerLinkActive="active">
                                                {{"LINK_ABOUT_US" | translate}}
                                             </a>
@@ -79,17 +83,13 @@
                                                 Services
                                             </a>
                                             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
-                                              <li><a class="dropdown-item" href="#">Action</a></li>
-                                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                              <li><a class="dropdown-item" routerLink="/service/digital-market">Creating a global digital Market</a></li>
+                                              <li><a class="dropdown-item" routerLink="/service/international-trade">Export And Import Services</a></li>
+                                              <li><a class="dropdown-item" routerLink="/service/agricutural-technology">Agriculture Technology</a></li>
                                             </ul>
                                           </li>
                                       
-                                        <li class="dropdown-secondary">
-                                            <a class="nav-link" >
-                                                Blog
-                                            </a>
-                                        </li>
+                                    
                                         <li class="dropdown-secondary">
                                             <a class="nav-link" routerLink="/contact" >
                                                 {{"LINK_CONTACT_US" | translate}}
@@ -104,7 +104,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="header-column header-column-search justify-content-center ">
+                <!-- <div class="header-column header-column-search justify-content-center ">
                     <div class="header-nav-features">
                         <div class="header-nav-feature header-nav-features-search d-inline-flex">
                             <a   routerLink="/product/wish-list">
@@ -116,8 +116,8 @@
                             
                         </div>
                     </div>
-                </div>
-                <div class=" header-column-search justify-content-center ml-1">
+                </div> -->
+                <!-- <div class=" header-column-search justify-content-center ml-1">
 								<div class="header-nav-features">
 									<div class="header-nav-feature header-nav-features-search d-inline-flex">
 										<a   routerLink="/product/enquiry">
@@ -129,39 +129,28 @@
 										
 									</div>
 								</div>
-							</div>
-                            <div class="dropdown  d-none d-sm-block">
+							</div> -->
+                   
+
+
+                              <div class="dropdown  d-none d-sm-block" *ngIf="isLoggedIn">
                                 <button class="btn btn-link text-3  text-color-secondary dropdown-toggle text-decoration-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <!-- <i class="fa fa-user-circle"></i> -->
-                                  Account
+                                <img src=""  class="avatar">
+                                  Name
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-center outline-0 mt-5 ">
-                                  
-                                    <div>
-                                    <li><a class="dropdown-item" >
-                                        <p>Welcome back!</p>
-                                        <button class="btn btn-primary btn-block w-100 rounded p-0" routerLink="/auth/login">Sign In</button>
-                                      </a></li>
-                                      <li><a class="dropdown-item" >
-                                        
-                                        <button class="btn btn-outline-secondary btn-block w-100 rounded p-0" routerLink="/auth/register">Sign Up</button>
-    
-                                    
-                                    </a></li>
-                                  </div>
-                               
+                            
+                
 
                                 <div class="  div-dot"></div>
-                         <div class="mt-2">
+                         <div class="mt-5">
                             <li><a class="dropdown-item" href="#">My Account</a></li>
                             <li><a class="dropdown-item" href="#">Orders</a></li>
+                            <li><a class="dropdown-item" href="#">Equiries</a></li>
                             <li><a class="dropdown-item" href="#">Saved items</a></li>
                          </div>
                                 </ul>
                               </div>
-
-
-
             </div>
         </div>
     </div>

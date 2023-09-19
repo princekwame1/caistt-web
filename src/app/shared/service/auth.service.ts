@@ -8,11 +8,11 @@ import { BehaviorSubject, Observable } from 'rxjs';
 })
 export class AuthService {
 
-  private loggedIn = new BehaviorSubject<boolean>(false);
+  public loggedIn = new BehaviorSubject<boolean>(false);
 
   constructor(public http:HttpClient, private router:Router) { }
 
-  baseURL='https://caistt.herokuapp.com/api/v1/';
+  baseURL='https://api.caistt.com/api/v1/';
   
 
 

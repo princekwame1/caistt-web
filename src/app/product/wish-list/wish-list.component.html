@@ -22,7 +22,7 @@
                                 <img src="../../../assets/img/wishlist.png" width="400" height="400" class="img-fluid mb-4 mr-3">
                                 <h3><strong>{{'TEXT_YOUR_WISHLIST_IS_EMPTY'| translate}}</strong></h3>
                                
-                                <a  class="btn btn-primary btn-lg text-white cart-btn-transform m-3 border-0" data-abc="true">Continue Shopping</a>
+                                <a  class="btn btn-primary btn-lg text-white cart-btn-transform border-0" data-abc="true" [routerLink]=" ">Continue Shopping</a>
                                 
                             
                             </div>
@@ -76,12 +76,17 @@
                                         </td>
                                         <td class="product-price">
                                           
-                                            <a class="desc_text"[innerHTML]="product.product?.description"></a>
+                                            <div class="desc_text"[innerHTML]="product.product?.description"></div>
 
                                         </td>
-                                        <td class="Action ">
-                                          
-                                       <div  (click)="add2Enquiry(product.product?.id)"> <img src="../../../assets/img/shopping-bag.png" style="width: 20px; height: 20wpx;" alt=""> </div>
+                                        <td class="Action">
+<!--                                           
+                                       <div  (click)="add2Enquiry(product.product?.id)">
+                                        
+                                       </div> -->
+
+                                       <a  class="btn btn-secondary btn-circle btn-default" [routerLink]="'/product/enquiry/'+ product.product.id"><i class="fa fa-shopping-cart"></i>
+                                       </a>
                                         </td>
                                       
                                     </tr>

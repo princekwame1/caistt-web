@@ -1,15 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
 
 
+.owl-theme .owl-nav [class*=owl-] {
+    color: #f9531c;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: transparent;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+}
 
+.owl-theme .owl-nav [class*=owl-]:hover {
+    color: #f9531c;
+    background: transparent;
 
+}
 
 
 
 
 .owl-carousel .owl-dot, .owl-carousel .owl-nav .owl-next{
  float: right !important;
- margin-right:-30px;
+ margin-right:-50px;
 }
 
 .owl-carousel .owl-dot, .owl-carousel  .owl-nav .owl-prev {
@@ -34,5 +48,4 @@
 
 
 }
-
 

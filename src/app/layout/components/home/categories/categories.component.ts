@@ -5,10 +5,11 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 @Component({
   selector: 'app-categories',
   templateUrl: './categories.component.html',
-  styleUrls: ['./categories.component.scss']
+  styleUrls: ['./categories.component.scss','../../../../../assets/css/demos/demo-dentist.css']
 })
 export class CategoriesComponent {
   categoryData:any;
+  categoriesData: any;
   constructor(
     private productService:ProductService
   ) { }
@@ -16,6 +17,7 @@ export class CategoriesComponent {
   ngOnInit(): void {
 
     this.getCategory();
+    this.getcategories();
   }
 
 
@@ -50,10 +52,19 @@ export class CategoriesComponent {
 
 
   getCategory(){
-    return this.productService.getProductCategories().subscribe(response=>{
+    return this.productService.getProduct_categorytree().subscribe(response=>{
 
       this.categoryData=response.data;
-      console.log(this.categoryData);
+       console.log(this.categoryData);
+    })
+  }
+
+
+  getcategories(){
+    return this.productService.getProductCategories().subscribe(response=>{
+
+      this.categoriesData=response.data;
+      console.log(this.categoriesData);
     })
   }
 }

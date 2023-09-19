@@ -3,6 +3,7 @@ import {Renderer2 } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { TranslateService } from '@ngx-translate/core';
 import { EnquiryService } from 'src/app/shared/service/enquiry.service';
+import { AuthService } from 'src/app/shared/service/auth.service';
 
 declare var $:any;
 declare var theme:any;
@@ -14,11 +15,14 @@ declare var theme:any;
 export class NavbarComponent {
 enquiryLength: any;
 wishListLength:any;
-	
+isLoggedIn!:boolean;
 constructor(
 	public translateService:TranslateService,
-	private enquiryservice:EnquiryService
+	private enquiryservice:EnquiryService,
+	private authService:AuthService
   ){
+
+this.authService.loggedIn
 translateService.addLangs(['en','fr','zh']);
 if (localStorage.getItem('locale')) {
 	translateService.setDefaultLang(localStorage.getItem('locale')||"");
@@ -28,6 +32,9 @@ if (localStorage.getItem('locale')) {
 	translateService.use('en');
 	localStorage.setItem('locale', 'en');
 }
+
+
+
 }
 
 
@@ -35,6 +42,7 @@ if (localStorage.getItem('locale')) {
 
 ngOnInit(){
 
+	
 	// Sticky Header
 	if (typeof theme.StickyHeader !== 'undefined') {
 		theme.StickyHeader.initialize();
@@ -53,8 +61,8 @@ this.enquiryservice.enquirylength.subscribe(res=>{
 })
 
 this.enquiryservice.fetchEnquiryBasket().subscribe(res=>{
-	console.log(res.data)
-	this.enquiryservice.enquirylength.next(res.data.length)
+
+	this.enquiryservice.enquirylength.next(res.data?.length)
 });
 
 this.enquiryservice.WishListlength.subscribe(res=>{
@@ -63,11 +71,9 @@ this.enquiryservice.WishListlength.subscribe(res=>{
 })
 
 this.enquiryservice.fetchWishList().subscribe(res=>{
-	console.log(res.data)
-	this.enquiryservice.WishListlength.next(res.data.length)
+	
+	this.enquiryservice.WishListlength.next(res.data?.length)
 });
-
-
 
   if ($.isFunction($.fn['themePluginSticky']) && $('[data-plugin-sticky]').length) {
 		theme.fn.execOnceTroughWindowEvent( window, 'scroll.trigger.sticky', () =>{
@@ -84,13 +90,10 @@ this.enquiryservice.fetchWishList().subscribe(res=>{
 		});
 	}
 
-  
 	// Nav Menu
 	if (typeof theme.Nav !== 'undefined') {
 		theme.Nav.initialize();
 	}
-
-	
 
   	// Sticky Header
 	if (typeof theme.StickyHeader !== 'undefined') {
@@ -107,6 +110,7 @@ this.enquiryservice.fetchWishList().subscribe(res=>{
 	
 
 }
+
 
 translateSite(language:string){
 	this.translateService.use(language)

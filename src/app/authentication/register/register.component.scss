@@ -29,15 +29,7 @@ height:100vh ;
 }
 
 
-.card{
-  height: 86vh !important;
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  }
+
 
   .validation{
     font-size: smaller;
@@ -47,12 +39,7 @@ height:100vh ;
   
 
 
-.mat-horizontal-stepper-header-container {
-    
-    display: none !important;
 
-
-}
 
 
 @media (max-width: 600px) {
@@ -60,4 +47,11 @@ height:100vh ;
     margin: 0 !important;
     padding: 0 !important;
   }
+  }
+
+
+  .hidden{
+    float: right;
+    margin-top: -8%;
+    margin-right: 15px;
   }

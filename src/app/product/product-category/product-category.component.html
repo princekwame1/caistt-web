@@ -1,192 +1,210 @@
-<section class="page-header page-header-modern custom-page-header bg-color-quaternary">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-md-12 order-2 order-md-1 align-self-center p-static">
-                <h1 class="font-weight-bold text-9 text-color-secondary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100">{{categoryData?.name}}</h1>
-            </div>
+
+<body>
+  <section class="mb-5">
+    <div class=" text-center">
+        <div class="category_banner" >
            
+           
+        </div>
+
+        <div class="category_section ">
+          <div class="container bg-light pt-4 pb-2 shadow-sm rounded">
+
+
+            <owl-carousel-o [options]="customOptions1">
+
+              <ng-container  >
+                <ng-template class="slide" carouselSlide>
+                  <div class="mx-3">
+                    <img alt="" class="img-fluid rounded" src="assets/img/projects/project-1.jpg">
+                  </div>
+                </ng-template>
+                <ng-template class="slide" carouselSlide>
+                  <div class="mx-3">
+                    <img alt="" class="img-fluid rounded" src="assets/img/projects/project-1.jpg">
+                  </div>
+                </ng-template>          <ng-template class="slide" carouselSlide>
+                  <div class="mx-3">
+                    <img alt="" class="img-fluid rounded" src="assets/img/projects/project-1.jpg">
+                  </div>
+                </ng-template>          <ng-template class="slide" carouselSlide>
+                  <div class="mx-3">
+                    <img alt="" class="img-fluid rounded" src="assets/img/projects/project-1.jpg">
+                  </div>
+                </ng-template>          <ng-template class="slide" carouselSlide>
+                  <div class="mx-3">
+                    <img alt="" class="img-fluid rounded" src="assets/img/projects/project-1.jpg">
+                  </div>
+                </ng-template>          <ng-template class="slide" carouselSlide>
+                  <div class="mx-3">
+                    <img alt="" class="img-fluid rounded" src="assets/img/projects/project-1.jpg">
+                  </div>
+                </ng-template>          <ng-template class="slide" carouselSlide>
+                  <div class="mx-3">
+                    <img alt="" class="img-fluid rounded" src="assets/img/projects/project-1.jpg">
+                  </div>
+                </ng-template>          <ng-template class="slide" carouselSlide>
+                  <div class="mx-3">
+                    <img alt="" class="img-fluid rounded" src="assets/img/projects/project-1.jpg">
+                  </div>
+                </ng-template>          <ng-template class="slide" carouselSlide>
+                  <div class="mx-3">
+                    <img alt="" class="img-fluid rounded" src="assets/img/projects/project-1.jpg">
+                  </div>
+                </ng-template>          <ng-template class="slide" carouselSlide>
+                  <div class="mx-3">
+                    <img alt="" class="img-fluid rounded" src="assets/img/projects/project-1.jpg">
+                  </div>
+                </ng-template>
+              </ng-container>
+          
+            </owl-carousel-o>  
+          </div>
         </div>
     </div>
 </section>
+<div class="text-center blur-container " *ngIf="loading">
+  <div class="lds-ring " ><div></div><div></div><div></div><div></div></div>
 
 
-<div class="text-center" *ngIf="loading">
-  <div class="lds-ripple " ><div></div><div></div></div>
+</div>
+<div class="container mb-5" *ngIf="!loading">
+  <div class="row col-md-12  pt-2 pb-2 bg-color ">
+
+<div class="col-md-6 display col-sm-12">
+  <div class="input-group">
+    <input class="form-control border-end-0 border" type="search" value="search" id="example-search-input">
+    <span class="input-group-append">
+        <button class="btn btn-outline-secondary bg-white border-start-0 border-bottom-0 border ms-n5" type="button">
+            <i class="fa fa-search"></i>
+        </button>
+    </span>
+</div>
+  <div class="dropdown mx-2">
+    <a class="btn text-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+      All Brand
+    </a>
+  
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <li><a class="dropdown-item" *ngFor="let brand of allBrand" (click)="sortbyBrand(brand.id)">{{brand.name}}</a></li>
+     
+    </ul>
+  </div><div class="dropdown">
+    <a class="btn btn-light  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    All Category
+    </a>
+  
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div>
 </div>
 
-<div role="main" class="main shop pt-4" *ngIf="!loading" >
+<div class="col-md-3 col-sm-12">
 
-  <div class="container">
+</div>
 
-    <div class="row">
-      <div class="col-lg-3 order-2 order-lg-1 bg-color py-5 ">
-        <aside class="sidebar">
-          <form  method="get">
-            <div class="input-group mb-3 pb-1">
-              <input class="form-control text-1" placeholder="Search..." name="s" id="s" type="text">
-              <button type="submit" class="btn btn-dark text-1 p-2"><i class="fas fa-search m-2"></i></button>
-            </div>
-          </form>
-          <h5 class="font-weight-semi-bold pt-3">Categories</h5>
-          <ul class="nav nav-list flex-column">
-            <li class="nav-item"><a class="nav-link" href="#">Arts & Crafts</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Automotive</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Baby</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Books</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Eletronics</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Women's Fashion</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Men's Fashion</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Health & Household</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Home & Kitchen</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Military Accessories</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Movies & Television</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Sports & Outdoors</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Tools & Home Improvement</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Toys & Games</a></li>
-          </ul>
-        
-          <div class="row mb-5">
-            <div class="col">
-              <h5 class="font-weight-semi-bold pt-5">Top Rated Products</h5>
-              <div class="product row row-gutter-sm align-items-center mb-4">
-                <div class="col-5 col-lg-5">
-                  <div class="product-thumb-info border-0">
-                    <a >
-                      <div class="product-thumb-info-image">
-                        <img alt="" class="img-fluid" src="assets/img/products/product-grey-6.jpg">
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-7 col-lg-7 ms-md-0 ms-lg-0 ps-lg-1 pt-1">
-                  <a href="#" class="d-block text-uppercase text-decoration-none text-color-default text-color-hover-primary line-height-1 text-0 mb-2">hat</a>
-                  <h3 class="text-3-5 font-weight-medium font-alternative text-transform-none line-height-3 mb-0"><a href="shop-product-sidebar-right.html" class="text-color-dark text-color-hover-primary text-decoration-none">Blue Hat</a></h3>
-                  <div title="Rated 5 out of 5">
-                    <input type="text" class="d-none" value="5" title="" data-plugin-star-rating data-plugin-options="{'displayOnly': true, 'color': 'dark', 'size':'xs'}">
-                  </div>
-                  <p class="price text-4 mb-0">
-                    <span class="sale text-color-dark font-weight-semi-bold">$299,00</span>
-                    <span class="amount">$289,00</span>
-                  </p>
-                </div>
-              </div>
-              <div class="product row row-gutter-sm align-items-center mb-4">
-                <div class="col-5 col-lg-5">
-                  <div class="product-thumb-info border-0">
-                    <a >
-                      <div class="product-thumb-info-image">
-                        <img alt="" class="img-fluid" src="assets/img/products/product-grey-8.jpg">
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-7 col-lg-7 ms-md-0 ms-lg-0 ps-lg-1 pt-1">
-                  <a href="#" class="d-block text-uppercase text-decoration-none text-color-default text-color-hover-primary line-height-1 text-0 mb-2">accessories</a>
-                  <h3 class="text-3-5 font-weight-medium font-alternative text-transform-none line-height-3 mb-0"><a href="shop-product-sidebar-right.html" class="text-color-dark text-color-hover-primary text-decoration-none">Adventurer Bag</a></h3>
-                  <div title="Rated 5 out of 5">
-                    <input type="text" class="d-none" value="5" title="" data-plugin-star-rating data-plugin-options="{'displayOnly': true, 'color': 'dark', 'size':'xs'}">
-                  </div>
-                  <p class="price text-4 mb-0">
-                    <span class="sale text-color-dark font-weight-semi-bold">$99,00</span>
-                    <span class="amount">$79,00</span>
-                  </p>
-                </div>
-              </div>
-              <div class="product row row-gutter-sm align-items-center mb-4">
-                <div class="col-5 col-lg-5">
-                  <div class="product-thumb-info border-0">
-                    <a >
-                      <div class="product-thumb-info-image">
-                        <img alt="" class="img-fluid" src="assets/img/products/product-grey-9.jpg">
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-7 col-lg-7 ms-md-0 ms-lg-0 ps-lg-1 pt-1">
-                  <a href="#" class="d-block text-uppercase text-decoration-none text-color-default text-color-hover-primary line-height-1 text-0 mb-2">sports</a>
-                  <h3 class="text-3-5 font-weight-medium font-alternative text-transform-none line-height-3 mb-0"><a class="text-color-dark text-color-hover-primary text-decoration-none">Baseball Ball</a></h3>
-                  <div title="Rated 5 out of 5">
-                    <input type="text" class="d-none" value="5" title="" data-plugin-star-rating data-plugin-options="{'displayOnly': true, 'color': 'dark', 'size':'xs'}">
-                  </div>
-                  <p class="price text-4 mb-0">
-                    <span class="sale text-color-dark font-weight-semi-bold">$399,00</span>
-                    <span class="amount">$299,00</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </aside>
+    <div class=" col-md-3 col-sm-12 shadow-sm">
+
+      <div class=" float-end">
+        <button class="btn mx-2"><i class="fa fa-bars"></i> List</button> 
+        <button class="btn active" ><i class="fa fa-th-large"></i> Grid</button>
       </div>
-      <div class="col-lg-9 order-1 order-lg-2">
 
-        <div class="masonry-loader " >
-          <div class="row products product-thumb-info-list" >
-
-            <div class="col-sm-6 col-lg-4" *ngFor="let product of categoryProduct">
-              <div class="product mb-0">
-                <div class="product-thumb-info border-0 mb-3">
-
-
-
-                  <div class="addtocart-btn-wrapper">
-                    <a  class="text-decoration-none addtocart-btn mb-1" title="Add to Cart" (click)="Add2Basket(product.id)">
-                      <i class="icons icon-bag"></i>
-                    </a>
-                    <a  class="text-decoration-none addtocart-btn mt-1" title="Add to wishlist" (click)="Add2Wishlist(product.id)">
-                      <i class="far fa-heart"></i>
-                    </a>
-                  </div>
-
-                  <a  class="quick-view bg-secondary text-uppercase font-weight-semibold text-2">
-                    QUICK VIEW
-                  </a>
-
-                  <a >
-                    <div class="product-thumb-info-image">
-                      <img alt="" class="img-fluid" src="assets/img/products/product-grey-1.jpg">
-
-                    </div>
-                  </a>
-                </div>
-                <div class=" justify-content-between  text-center">
-                  <div>
-                    <a href="#" class="d-block text-uppercase text-decoration-none text-color-default text-color-hover-primary line-height-1 text-0 mb-1">{{product.category.name}}</a>
-                    <h3 class="text-3-5 font-weight-medium font-alternative text-transform-none line-height-3 mb-0"><a  class="text-color-dark text-color-hover-primary" [routerLink]="'/product/product/'+ product.id">{{product.name}}</a></h3>
-                  </div>
-                  <!-- <a href="#" class="text-decoration-none text-color-default text-color-hover-dark text-4"><i class="far fa-heart"></i></a> -->
-                </div>
-                <!-- <div title="Rated 5 out of 5">
-                  <input type="text" class="d-none" value="5" title="" data-plugin-star-rating data-plugin-options="{'displayOnly': true, 'color': 'default', 'size':'xs'}">
-                </div> -->
-                <p class="price  text-center text-3 mb-3">
-                  <span class="sale text-color-dark font-weight-semi-bold">$69,00-</span>
-                  <span >$59,00</span>
-                </p>
-              </div>
-            </div>
-
-     
-
-          </div>
-          <!-- <div class="row mt-4">
-            <div class="col">
-              <ul class="pagination float-end">
-                <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
-                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
-              </ul>
-            </div>
-          </div> -->
-        </div>
-      </div>
     </div>
   </div>
 
+
+  <div role="main" class="main shop pt-4">
+
+    <div class="container">
+
+      <div class="">
+        <div class="row products product-thumb-info-list my-5 pb-2" >
+
+          <div class=" col-sm-6 col-lg-3  my-3 " *ngFor="let product of categoryProduct?.data">
+            <div class="product mb-0">
+              <div class="product-thumb-info border-0 mb-3">
+
+                <div class="product-thumb-info-badges-wrapper">
+
+                </div>
+
+                <div class="addtocart-btn-wrapper">
+                  <a  class="text-decoration-none addtocart-btn " title="Add to Cart" (click)="Add2Wishlist(product.id)">
+                    <i class="icons icon-heart"></i>
+                  </a>
+
+                </div>
+
+                <a class="quick-view text-uppercase font-weight-semibold text-2" [routerLink]="'/product/enquiry/'+ product.id">
+                 SEND ENQUIRY
+                </a>
+                <a >
+                  <div class="product-thumb-info-image">
+                    <img alt="" class="img-fluid"  [src]="product?.featured_image?.url">
+
+                  </div>
+                </a>
+              </div>
+              <div class="d-flex justify-content-center text-center 33">
+                <div>
+                  <!-- <a href="#" class="d-block text-uppercase text-decoration-none text-color-default text-color-hover-primary line-height-1 text-0 mb-1">electronics</a> -->
+                  <h3 class="text-3-5 font-weight-medium font-alternative text-transform-none line-height-3 mb-0"><a  class="text-color-dark text-color-hover-primary" [routerLink]="'/product/single-product/'+ product.id">{{product.name}}</a></h3>
+                </div>
+                <!-- <a href="#" class="text-decoration-none text-color-default text-color-hover-dark text-4"><i class="far fa-heart"></i></a> -->
+              </div>
+
+              <div class="text-3 text-center">
+                <span>$256 - $ 300</span><br>
+                <a  class="d-block text-uppercase text-decoration-none text-color-default text-color-hover-primary line-height-1 text-0 mb-1">MOQ3</a>
+
+              </div>
+              <!-- <div title="Rated 5 out of 5">
+                <input type="text" class="d-none" value="5" title="" data-plugin-star-rating data-plugin-options="{'displayOnly': true, 'color': 'default', 'size':'xs'}">
+              </div> -->
+              <!-- <p class=" text-5 mb-3">
+                <span class="sale text-color-dark ">$69,00</span>
+                <span class="amount">$59,00</span>
+              </p> -->
+            </div>
+          </div>
+
+  
+
+        </div>
+        <div class="row mt-4">
+          <div class="col">
+            <ul class="pagination ">
+              <li class="page-item  " *ngFor="let links of categoryProduct?.meta?.links;  let i = index"  (click)="pagination(links.url)" [ngClass]="{ 'active': links?.meta?.links?.active }">
+                <span class="page-link " >{{links.label  }}</span>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+    <!-- <nav > -->
+      <!-- <ul class="pagination display-flex">
+        <li class="page-item " *ngFor="let links of categoryProduct?.meta?.links"(click)="pagination(links.url)">
+          <span class="page-link">{{links.label}}</span>
+        </li>
+    
+      </ul>
+    </nav> -->
+
+ 
 </div>
 
 
 
 
+</body>

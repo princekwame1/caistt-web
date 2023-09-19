@@ -3,7 +3,9 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { DomSanitizer } from '@angular/platform-browser';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { EnquiryService } from 'src/app/shared/service/enquiry.service';
-import {ActivatedRoute} from '@angular/router'
+import {ActivatedRoute, Route, Router} from '@angular/router'
+import { ProductService } from 'src/app/shared/service/product.service';
+import Swal from 'sweetalert2';
 declare var $:any;
 declare var theme:any;
 @Component({
@@ -15,19 +17,24 @@ export class EnquiryComponent implements OnInit {
   files: any;
   enquiryData:any;
   enquiryForm:FormGroup;
+  productData:any;
+
+
   constructor(
      private EquiryService:EnquiryService,
      private fb:FormBuilder,
-     private route:ActivatedRoute
+     private route:ActivatedRoute,
+     public productService:ProductService,
+     public router: Router,
      ) { 
 
 
 console.log(this.route.snapshot.data)
     this.enquiryForm = this.fb.group({
-    
+    product_id:[],
       content: ["", Validators.required],
       attachment:['', Validators.required],
-     
+     quantity:[null , Validators.required]
 
     });
   
@@ -35,8 +42,17 @@ console.log(this.route.snapshot.data)
 
   ngOnInit(){
 
-this.enquiryData=this.route.snapshot.data['enquiry'].data;
-     console.log(this.enquiryData)
+    this.route.params.subscribe(params => {
+      this.productService.getProductbyID(params['id']).subscribe(response => {
+
+    this.productData=response.data;
+   
+         
+         })
+       });
+
+// this.enquiryData=this.route.snapshot.data['enquiry'].data;
+//      console.log(this.enquiryData)
     // this.getEnquiryItems();
 
 
@@ -112,8 +128,30 @@ this.enquiryData=this.route.snapshot.data['enquiry'].data;
 
   postEnquiry(){
 // console.log(this.enquiryForm.value)
+
+this.enquiryForm.patchValue({'product_id' :this.productData.id})
     this.EquiryService.postEnquiry(this.enquiryForm.value).subscribe(response=>{
-      this.getEnquiryItems();
+      if(response.status ===200 || 204){
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          backdrop: `
+          rgba(255,255,255,0.99)
+        
+          no-repeat`,
+          showClass: {
+            popup: 'animate__animated animate__fadeIn '
+          },
+          hideClass: {
+            popup: 'animate__animated animate__fadeOut'
+          },
+          title: 'Your enquiry has been sent successfully  ' ,
+          text:'We will get back to you shortly',
+          showConfirmButton: false,
+       timer: 3500
+        });
+     this.router.navigate(['/auth/login']);
+       };
 this.EquiryService.enquirylength.next(this.enquiryData)
 
     })

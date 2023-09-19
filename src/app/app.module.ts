@@ -17,8 +17,9 @@ import { Page404Component } from './others/page404/page404.component';
 import { ChatBoxComponent } from './others/chat-box/chat-box.component';
 import { CartComponent } from './others/cart/cart.component';
 import { InterceptorInterceptor } from './shared/interceptor/interceptor.interceptor';
-// import { FaqComponent } from './others/faq/faq.component';
+//  import { FaqComponent } from './others/faq/faq.component';
 import { ToastrModule } from 'ngx-toastr';
+import { TermsAndpolicyComponent } from './others/terms-andpolicy/terms-andpolicy.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ToastrModule } from 'ngx-toastr';
     Page404Component,
     ChatBoxComponent,
     CartComponent,
-    // FaqComponent,
+    TermsAndpolicyComponent,
+// FaqComponent,
   ],
   imports: [
     BrowserModule,

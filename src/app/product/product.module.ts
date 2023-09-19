@@ -11,6 +11,8 @@ import {NgxPaginationModule} from 'ngx-pagination';
 import { TranslateModule } from '@ngx-translate/core';
 import {ToastrModule} from 'ngx-toastr';
 import { WishListComponent } from './wish-list/wish-list.component';
+import { QuickviewComponent } from './quickview/quickview.component';
+import { AllProductComponent } from './all-product/all-product.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { WishListComponent } from './wish-list/wish-list.component';
     SingleProductComponent,
     EnquiryComponent,
     WishListComponent,
+    QuickviewComponent,
+    AllProductComponent,
 
   ],
   imports: [
@@ -28,7 +32,7 @@ import { WishListComponent } from './wish-list/wish-list.component';
     CarouselModule,
     TranslateModule,
     ToastrModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
 
   ]
 })

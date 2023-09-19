@@ -4,7 +4,7 @@
 }
 
 .body{
-    width: 86%;
+    width: 75%;
     
 }
 
@@ -22,4 +22,24 @@
     margin: 0;
     padding: 0;
     border-bottom:none!important ;
+}
+
+.name{
+    font-size: 80%;
+}
+
+.price{
+font-size: 80%;
+}
+
+.display{
+    display: flex;
+
+    flex-direction: row;
+}
+
+.col-md-3
+.sidebar{
+    width: 90% !important;
+    background-color: red;
 }

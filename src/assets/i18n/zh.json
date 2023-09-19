@@ -160,7 +160,11 @@
   "HEADER_WISHLIST_EMPTY_TITLE": "愿望清单是空的",
  
   "HEADER_FORGET_PASSWORD":"忘记密码",
-  "INPUT_WEBSITE": "网站"
+  "INPUT_WEBSITE": "网站",
 
 
+
+  "TESTIMONIAL_TITLE":"成功的故事",
+  "TESTIMONIAL_DESCRIPTION":"我们的客户评论说，我们的B2B如何彻底改变了他们与企业合作的方式，并在当今快节奏的数字环境中茁壮成长。自推出以来，我们的应用程序取得了无与伦比的成功，使无数的客户能够简化他们的操作，提高效率，并实现可持续增长。通过实时信息传递、文件共享和项目管理工具等功能，我们的应用程序消除了沟通障碍，提高了运营效率。我们基于成功客户的跟踪记录证明了这些结果。 ",
+"TESTIMONIAL_SUBTITLE":"我们的推荐信"
 }

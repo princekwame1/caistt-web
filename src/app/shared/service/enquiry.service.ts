@@ -13,7 +13,7 @@ export class EnquiryService {
 WishListlength=new BehaviorSubject<Number>(0);
   constructor(private http:HttpClient) { }
 
-  baseURL='https://caistt.herokuapp.com/api/v1/';
+  baseURL='https://api.caistt.com/api/v1/';
 
 
 // Enquiries Section
@@ -56,11 +56,14 @@ deleteWlish_list(product_id:any):Observable<any>{
 
 
 postEnquiry(data:any):Observable<any>{
-  console.log(data)
   const formData = new FormData();
+  formData.append("product_id", data.product_id);
+  formData.append("quantity" , data.quantity);
   formData.append("content", data.content);
   formData.append("attachment", data.attachment);
   return this.http.post(`${this.baseURL}enquiries`,formData);
 
 }
+
+
 }

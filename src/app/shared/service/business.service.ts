@@ -10,7 +10,7 @@ export class BusinessService {
 
   constructor(private http:HttpClient) { }
 
-  baseURL='https://caistt.herokuapp.com/api/v1/';
+  baseURL='https://api.caistt.com/api/v1/';
 
 
   registerBusiness(business:any): Observable<any>{

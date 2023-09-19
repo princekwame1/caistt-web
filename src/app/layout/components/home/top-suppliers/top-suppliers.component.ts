@@ -20,8 +20,7 @@ export class TopSuppliersComponent {
 
   getBusiness(){
     return this.businessService.getBusiness().subscribe(response=>{
-      console.log(response.data)
-      this.businessData=response.data;
+      this.businessData=response?.data;
     })
   }
 

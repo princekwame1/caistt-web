@@ -634,8 +634,8 @@ html[dir="rtl"] .slider-container .line-pre-title {
 }
 
 .real-word-stories .custom-testimonial-container {
-		width: 72.5%;
-		padding-right: 150px;
+		width: 80.5%;
+		padding-right:20px;
 }
 
 @media (max-width: 1199px) {

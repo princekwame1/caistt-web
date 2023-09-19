@@ -35,7 +35,9 @@ export class RegisterComponent {
   deviceInfo!:DeviceInfo
   icon_imageData: any;
   document_imageData:any;
+  public show: boolean = false
 
+  hide:boolean=true;
 
 
 
@@ -85,58 +87,60 @@ export class RegisterComponent {
 
 register(): void {
 
-  console.log(this.registerForm.value)
- this.registerForm.markAllAsTouched();
+  Swal.fire({
+    position: 'center',
+    icon: 'success',
+    backdrop: `
+    rgba(255,255,255,0.99)
+  
+    no-repeat`,
+    showClass: {
+      popup: 'animate__animated animate__fadeIn '
+    },
+    hideClass: {
+      popup: 'animate__animated animate__fadeOut'
+    },
+    title: 'Please check your email  to verify your acoount ',
+    showConfirmButton: false,
+   timer: 3500
+  });
+
+  this.router.navigate(['/']);
+
+//  this.registerForm.markAllAsTouched();
 
     // if (this.registerInProgress || this.registerForm.invalid) {
     //     return;
     // }
 
-this.registerInProgress = true;
+// this.registerInProgress = true;
 
-   this.businessService.registerBusiness(this.registerForm.value)
-   .pipe(
-        finalize(() => this.registerInProgress = false),
-        takeUntil(this.destroy$),
-    )
-    .subscribe(
-        (response) =>{
-          if(response.status ===200 || 204){
-            Swal.fire({
-              position: 'center',
-              icon: 'success',
-              backdrop: `
-              rgba(255,255,255,0.99)
-            
-              no-repeat`,
-              showClass: {
-                popup: 'animate__animated animate__fadeIn '
-              },
-              hideClass: {
-                popup: 'animate__animated animate__fadeOut'
-              },
-              title: 'Please check your email  to verify your acoount ',
-              showConfirmButton: false,
-              // timer: 3500
-            });
-            //  this.router.navigate(['/auth/login']);
-           };
-
-//  this.router.navigateByUrl('/account/dashboard'),
-
-        }
-        ,
+  //  this.businessService.registerBusiness(this.registerForm.value)
+  //  .pipe(
+  //       finalize(() => this.registerInProgress = false),
+  //       takeUntil(this.destroy$),
+  //   )
+  //   .subscribe(
+  //       (response) =>{
+  //         if(response.status ===200 || 204){
+     
         
-        error => {
-            if (error instanceof HttpErrorResponse) {
-                this.registerForm.setErrors({
-                    server: `${error.error.message}`,
-                });
-            } else {
-                alert(error);
-            }
-        },
-    );
+  //          };
+
+
+        // }
+        // ,
+        
+        // error => {
+        //     if (error instanceof HttpErrorResponse) {
+        //         this.registerForm.setErrors({
+        //             server: `${error.error.message}`,
+        //         });
+        //     } else {
+        //         alert(error);
+        //     }
+        // },
+    // );
 }
 
 
@@ -236,4 +240,12 @@ OnfileChange(event: any) {
   };
 }
 
+
+showPassword(){
+  this.show = !this.show
+}
+
+togglePass(){
+  this.hide=!this.hide;
+}
 }

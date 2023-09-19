@@ -11,7 +11,7 @@ export class ProductService {
 
   constructor(private http:HttpClient) { }
 
-  baseURL='https://caistt.herokuapp.com/api/v1/';
+  baseURL='https://api.caistt.com/api/v1/';
 
   quote = new BehaviorSubject<any[]>(JSON.parse(localStorage.getItem('quote') || '[]'))
 
@@ -46,7 +46,6 @@ UpdateProductCategory(id:number, category:any):Observable<any>{
     formData.append("parent_id", category.parent_id);
     formData.append("featured_image", category.featured_image);
     formData.append("banner_image", category.featured_image);
-  console.log(formData)
     return this.http.put(`${this.baseURL}product-categories/${id}`, formData)
    
    }
@@ -85,6 +84,10 @@ getFeaturedProduct():Observable<any>{
         return this.http.get<any>(`${this.baseURL}products?filter[is_featured]=1`)
       }
 
+
+      getProduct():Observable<any>{
+        return this.http.get<any>(`${this.baseURL}products`)
+      }
         
  getProductbyID(id:any):Observable<any>{
           return this.http.get<any>(`${this.baseURL}products/${id}`);
@@ -146,19 +149,19 @@ getFeaturedProduct():Observable<any>{
      }
 
 
-addQuotebasket(product_id:any):Observable<any>{
+// addQuotebasket(product_id:any):Observable<any>{
   
-  return this.http.post(`${this.baseURL}quote-basket/${product_id}`,'')
-}
+//   return this.http.post(`${this.baseURL}quote-basket/${product_id}`,'')
+// }
 
 
-getQuoteBasket():Observable<any>{
-  return this.http.get(`${this.baseURL}quote-basket`)
-}
+// getQuoteBasket():Observable<any>{
+//   return this.http.get(`${this.baseURL}quote-basket`)
+// }
 
-deleteQuoteBasket(id:any):Observable<any>{
-  return this.http.delete(`${this.baseURL}quote-basket/${id}`)
-}
+// deleteQuoteBasket(id:any):Observable<any>{
+//   return this.http.delete(`${this.baseURL}quote-basket/${id}`)
+// }
 
 
 getProduct_categorytree():Observable<any>{
@@ -174,8 +177,15 @@ ProductByCategory(name:any):Observable<any>{
 
    ProductByBusiness(id:any):Observable<any>{
 
-    return this.http.get<any>(`${this.baseURL}products?filter[business.id]=${id}`)
+    return this.http.get<any>(`${this.baseURL}products?filter[business.business_name]=${id}`)
   
+     }
+
+
+
+     searchProduct(name:any):Observable<any>{
+      return this.http.get<any>(`${this.baseURL}products?filter[name]=${name}`)
+
      }
 
 }

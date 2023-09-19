@@ -15,120 +15,147 @@
                 <div class="overflow-hidden mb-3">
                     <h3 class="font-weight-bold text-color-secondary text-transform-none text-9 line-height-2 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="400">{{'WHATWEDO_TITLE1'| translate}}</h3>
                 </div>
-                <p class="custom-font-secondary custom-font-size-1 line-height-7 mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">{{'WHATWEDO_TITLE2'| translate}}</p>
+                <!-- <p class="custom-font-secondary custom-font-size-1 line-height-7 mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">{{'WHATWEDO_TITLE2'| translate}}</p> -->
             </div>
         </div>
-        
-            <!-- <div class="col appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">
-                <div class="owl-carousel stage-margin stage-margin-md nav-style-1 nav-svg-arrows-1 nav-dark" data-plugin-options="{'responsive': {'0': {'items': 1}, '476': {'items': 2}, '768': {'items': 2}, '992': {'items': 3}, '1200': {'items': 4}}, 'autoplay': false, 'autoplayTimeout': 5000, 'autoplayHoverPause': true, 'dots': false, 'nav': true, 'loop': true, 'margin': 20, 'stagePadding': 75}">
-                    <div>
-                        <a  class="text-decoration-none">
-                            <div class="thumb-info custom-thumb-info-style-1 mb-3">
-                                <div class="custom-thumb-info-icon">
-                                    <img src="assets/img/demos/industry-factory/icons/icon-automotive.png" class="img-fluid" alt="" />
-                                </div>
-                                <div class="thumb-info-wrapper">
-                                    <img src="assets/img/demos/industry-factory/categories/category-1.jpg" class="img-fluid" alt="" />
-                                </div>
-                            </div>
-                        </a>
-                        <h4 class="text-center mb-0"><a  class="text-color-dark text-color-hover-primary text-decoration-none text-2">Automotive</a></h4>
-                    </div>
-                    <div>
-                        <a class="text-decoration-none">
-                            <div class="thumb-info custom-thumb-info-style-1 mb-3">
-                                <div class="custom-thumb-info-icon bg-dark">
-                                    <img src="assets/img/demos/industry-factory/icons/icon-oil.png" class="img-fluid" alt="" />
-                                </div>
-                                <div class="thumb-info-wrapper">
-                                    <img src="assets/img/demos/industry-factory/categories/category-2.jpg" class="img-fluid" alt="" />
-                                </div>
-                            </div>
-                        </a>
-                        <h4 class="text-center mb-0"><a  class="text-color-dark text-color-hover-primary text-decoration-none text-2">Oil & Gas</a></h4>
-                    </div>
-                    <div>
-                        <a class="text-decoration-none">
-                            <div class="thumb-info custom-thumb-info-style-1 mb-3">
-                                <div class="custom-thumb-info-icon">
-                                    <img src="assets/img/demos/industry-factory/icons/icon-solar-energy.png" class="img-fluid" alt="" />
-                                </div>
-                                <div class="thumb-info-wrapper">
-                                    <img src="assets/img/demos/industry-factory/categories/category-3.jpg" class="img-fluid" alt="" />
-                                </div>
-                            </div>
-                        </a>
-                        <h4 class="text-center mb-0"><a  class="text-color-dark text-color-hover-primary text-decoration-none text-2">Wind & Solar</a></h4>
-                    </div>
-                    <div>
-                        <a  class="text-decoration-none">
-                            <div class="thumb-info custom-thumb-info-style-1 mb-3">
-                                <div class="custom-thumb-info-icon bg-dark">
-                                    <img src="img/demos/industry-factory/icons/icon-electrical-tower.png" class="img-fluid" alt="" />
-                                </div>
-                                <div class="thumb-info-wrapper">
-                                    <img src="img/demos/industry-factory/categories/category-4.jpg" class="img-fluid" alt="" />
-                                </div>
-                            </div>
-                        </a>
-                        <h4 class="text-center mb-0"><a  class="text-color-dark text-color-hover-primary text-decoration-none text-2">Eletrical</a></h4>
-                    </div>
-                    <div>
-                        <a  class="text-decoration-none">
-                            <div class="thumb-info custom-thumb-info-style-1 mb-3">
-                                <div class="custom-thumb-info-icon">
-                                    <img src="assets/img/demos/industry-factory/icons/icon-oil.png" class="img-fluid" alt="" />
-                                </div>
-                                <div class="thumb-info-wrapper">
-                                    <img src="assets/img/demos/industry-factory/categories/category-2.jpg" class="img-fluid" alt="" />
-                                </div>
-                            </div>
-                        </a>
-                        <h4 class="text-center mb-0"><a  class="text-color-dark text-color-hover-primary text-decoration-none text-2">Oil & Gas</a></h4>
-                    </div>
-                    <div>
-                        <a  class="text-decoration-none">
-                            <div class="thumb-info custom-thumb-info-style-1 mb-3">
-                                <div class="custom-thumb-info-icon bg-dark">
-                                    <img src="assets/img/demos/industry-factory/icons/icon-solar-energy.png" class="img-fluid" alt="" />
-                                </div>
-                                <div class="thumb-info-wrapper">
-                                    <img src="assets/img/demos/industry-factory/categories/category-3.jpg" class="img-fluid" alt="" />
-                                </div>
-                            </div>
-                        </a>
-                        <h4 class="text-center mb-0"><a  class="text-color-dark text-color-hover-primary text-decoration-none text-2">Wind & Solar</a></h4>
-                    </div>
-                </div>
-            </div> -->
-
-
-            <div class="row">
-                <owl-carousel-o [options]="customOptions">
-
-                    <ng-container *ngFor="let category of categoryData">
-                      <ng-template class="slide" carouselSlide [id]="category.id">
-                        <div class="category">
-                            <a  class="text-decoration-none">
-                                <div class="thumb-info custom-thumb-info-style-1 mb-3">
-                                    <!-- <div class="custom-thumb-info-icon bg-dark">
-                                        <img src="assets/img/demos/industry-factory/icons/icon-electrical-tower.png" class="img-fluid" alt="" />
-                                    </div> -->
-                                    <div class="thumb-info-wrapper">
-                                        <img src="assets/img/demos/industry-factory/categories/category-4.jpg" style="width:100%; height: 269px;" class="img-fluid" alt="" />
-                                    </div>
-                                </div>
-                            </a>
-                            <h4 class="text-center mb-0"><a  class="text-color-dark text-color-hover-primary text-decoration-none text-2" [routerLink]="'product/product-category/'+ category.id">{{category.name}}</a></h4>
-                        </div>
-                      
-          
-                      </ng-template>
-                    </ng-container>
-                
-                  </owl-carousel-o>  
-                    
-            </div>
-   
+      
     </div>
 </section>
+
+
+				<section class="section border-0 m-0 py-5">
+					<div class="container-fluid">
+						<div class="row px-4">
+
+							<div class="owl-carousel owl-theme full-width nav-style-1 nav-arrows-thin nav-font-size-lg custom-nav-1 custom-nav-1-pos-2 p-relative mb-0" data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 2}, '979': {'items': 2}, '1199': {'items': 4}}, 'loop': true, 'nav': true, 'dots': false, 'margin': 40}">
+								<div>
+									<span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-slow-image-zoom-hover thumb-info-swap-content anim-hover-inner-wrapper">
+										<span class="thumb-info-wrapper overlay overlay-op-3 overlay-show overflow-hidden">
+											<img src="../../../../../assets/img/food.jpg" class="img-fluid" alt="">
+											<span class="thumb-info-title bg-transparent w-100 mw-100 p-0 top-0 p-5">
+												<span class="anim-hover-inner-translate-bottom-20px transition-2ms d-inline-block">
+													<span class="thumb-info-inner">
+														<h4 class="text-color-light text-5 font-weight-bold">Food Processing Industry</h4>
+													</span>
+												</span>
+											</span>
+											<span class="thumb-info-title bottom-30 bg-transparent w-100 mw-100 p-0">
+												<span class="thumb-info-swap-content-wrapper">
+													<span class="thumb-info-inner text-start ps-5">
+														<img style="max-width: 60px;" height="60" width="60" class="transform-none mb-3" src="assets/img/food.png" />
+													</span>
+													<span class="thumb-info-inner text-2">
+														<p class="px-5 text-4 text-lg-2 opacity-7 font-weight-medium text-light">We have in stock variety of food items. All foods advertised here are standard and safe to consume. Buying from us is one way of ensuring a healthy body system.</p>
+														<a class="btn btn-primary btn-arrow-effect-1 py-2 px-3 ms-5 mb-3 text-3 text-lg-1 ls-0 border-0">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+													</span>
+												</span>
+											</span>
+										</span>
+									</span>
+								</div>
+								<div>
+									<span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-slow-image-zoom-hover thumb-info-swap-content anim-hover-inner-wrapper">
+										<span class="thumb-info-wrapper overlay overlay-op-3 overlay-show overflow-hidden">
+											<img src="assets/img/machinery.jpg" class="img-fluid" alt="">
+											<span class="thumb-info-title bg-transparent w-100 mw-100 p-0 top-0 p-5">
+												<span class="anim-hover-inner-translate-bottom-20px transition-2ms d-inline-block">
+													<span class="thumb-info-inner">
+														<h4 class="text-color-light text-5 font-weight-bold">Farm & Factory Machinery Industry</h4>
+													</span>
+												</span>
+											</span>
+											<span class="thumb-info-title bottom-30 bg-transparent w-100 mw-100 p-0">
+												<span class="thumb-info-swap-content-wrapper">
+													<span class="thumb-info-inner text-start ps-5">
+														<img style="max-width: 60px;" height="60" width="60" class="transform-none mb-3" src="assets/img/machinery.png" />
+													</span>
+													<span class="thumb-info-inner text-2">
+														<p class="px-5 text-4 text-lg-2 opacity-7 font-weight-medium text-light">Talk of farm tractors, harvesters, drones and other machinery and we have you in mind. Our agricultural machinery are in the best forms and have been certified as durable.</p>
+														<a  class="btn btn-primary btn-arrow-effect-1 py-2 px-3 ms-5 mb-3 text-3 text-lg-1 ls-0 border-0">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+													</span>
+												</span>
+											</span>
+										</span>
+									</span>
+								</div>
+								<div>
+									<span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-slow-image-zoom-hover thumb-info-swap-content anim-hover-inner-wrapper">
+										<span class="thumb-info-wrapper overlay overlay-op-3 overlay-show overflow-hidden">
+											<img src="assets/img/warehousing.jpg" class="img-fluid" alt="">
+											<span class="thumb-info-title bg-transparent w-100 mw-100 p-0 top-0 p-5">
+												<span class="anim-hover-inner-translate-bottom-20px transition-2ms d-inline-block">
+													<span class="thumb-info-inner">
+														<h4 class="text-color-light text-5 font-weight-bold">Warehousing & Logistics</h4>
+													</span>
+												</span>
+											</span>
+											<span class="thumb-info-title bottom-30 bg-transparent w-100 mw-100 p-0">
+												<span class="thumb-info-swap-content-wrapper">
+													<span class="thumb-info-inner text-start ps-5">
+														<img style="max-width: 60px;" height="60" width="60" class="transform-none mb-3" src="assets/img/warehousing.png" />
+													</span>
+													<span class="thumb-info-inner text-2">
+														<p class="px-5 text-4 text-lg-2 opacity-7 font-weight-medium text-light">To keep all types of agricultural produce at the proper temperature in order to preserve the produce, we have expert engineering firms that construct high-quality, long-lasting warehouses.</p>
+														<a  class="btn btn-primary btn-arrow-effect-1 py-2 px-3 ms-5 mb-3 text-3 text-lg-1 ls-0 border-0">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+													</span>
+												</span>
+											</span>
+										</span>
+									</span>
+								</div>
+								<div>
+									<span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-slow-image-zoom-hover thumb-info-swap-content anim-hover-inner-wrapper">
+										<span class="thumb-info-wrapper overlay overlay-op-3 overlay-show overflow-hidden">
+											<img src="assets/img/fertilizer.jpg" class="img-fluid" alt="">
+											<span class="thumb-info-title bg-transparent w-100 mw-100 p-0 top-0 p-5">
+												<span class="anim-hover-inner-translate-bottom-20px transition-2ms d-inline-block">
+													<span class="thumb-info-inner">
+														<h4 class="text-color-light text-5 font-weight-bold">Agro-Chemicals & Fertilizers</h4>
+													</span>
+												</span>
+											</span>
+											<span class="thumb-info-title bottom-30 bg-transparent w-100 mw-100 p-0">
+												<span class="thumb-info-swap-content-wrapper">
+													<span class="thumb-info-inner text-start ps-5">
+														<img style="max-width: 60px;" height="60" width="60" class="transform-none mb-3" src="assets/img/fertilizer.png" />
+													</span>
+													<span class="thumb-info-inner text-2">
+														<p class="px-5 text-4 text-lg-2 opacity-7 font-weight-medium text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere elit in massa congue congue. Ut ornare fermentum sem, vitae port.</p>
+														<a class="btn btn-primary btn-arrow-effect-1 py-2 px-3 ms-5 mb-3 text-3 text-lg-1 ls-0 border-0">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+													</span>
+												</span>
+											</span>
+										</span>
+									</span>
+								</div>
+								<div>
+									<span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-slow-image-zoom-hover thumb-info-swap-content anim-hover-inner-wrapper">
+										<span class="thumb-info-wrapper overlay overlay-op-3 overlay-show overflow-hidden">
+											<img src="assets/img/animal.jpg" class="img-fluid" alt="">
+											<span class="thumb-info-title bg-transparent w-100 mw-100 p-0 top-0 p-5">
+												<span class="anim-hover-inner-translate-bottom-20px transition-2ms d-inline-block">
+													<span class="thumb-info-inner">
+														<h4 class="text-color-light text-5 font-weight-bold">Animal feed & Animal Products</h4>
+													</span>
+												</span>
+											</span>
+											<span class="thumb-info-title bottom-30 bg-transparent w-100 mw-100 p-0">
+												<span class="thumb-info-swap-content-wrapper">
+													<span class="thumb-info-inner text-start ps-5">
+														<img style="max-width: 60px;" height="60" width="60" class="transform-none mb-3" src="assets/img/animal.png" />
+													</span>
+													<span class="thumb-info-inner text-2">
+														<p class="px-5 text-4 text-lg-2 opacity-7 font-weight-medium text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere elit in massa congue congue. Ut ornare fermentum sem, vitae port.</p>
+														<a  class="btn btn-primary btn-arrow-effect-1 py-2 px-3 ms-5 mb-3 text-3 text-lg-1 ls-0 border-0">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+													</span>
+												</span>
+											</span>
+										</span>
+									</span>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</section>
+   

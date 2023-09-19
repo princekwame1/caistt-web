@@ -5,45 +5,27 @@
             <div class="row ">
 
                 <div class="col-md-9 d-flex  mt-md-0 mx-auto">
-                    <div class="card flex-grow-1 mb-0 ml-0 ml-lg-3 mr-0 mr-lg-4">
-                        <div class="card-body card-body--padding--2">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <i routerLink="" class="fa fa-arrow-left text-secondary" aria-hidden="true"></i>
+                    <div class="card px-2 flex-grow-1 mb-0 ml-0 ml-lg-3 mr-0 mr-lg-4">
+                        <div class="card-body">
+                       
 
-                                </div>
-                                <div class="col-md-4"> <div class="text-center my-5">
-                                    <a routerLink="/" class="logo">
-    
-                                        <div class="logo__image">
-    
-    
-                                            <img src="../../../assets/img/logo1.png" alt="" style="width:168px;
-                                            ">
-    
-                                        </div>
-                                    </a>
-                                </div></div>
-                                <div class="col-md-4"></div>
-                            </div>
-
-    <mat-horizontal-stepper [linear]="isLinear" [@.disabled]="true"  #stepper="matHorizontalStepper">
+    <!-- <mat-horizontal-stepper [linear]="isLinear" [@.disabled]="true"  #stepper="matHorizontalStepper"> -->
         <form [formGroup]="registerForm">
-        <mat-step >
+        <!-- <mat-step > -->
         
-              
+              <h1 class="text-center text-bold">Registration Form</h1>
             <div class="basic-info ">
                 <div class="form-group mt-5">
                     <label for="signup-name">{{ "INPUT_NAME_LABEL"|translate }}</label>
                     <input id="signup-name" type="text" class="form-control"
-                        placeholder="prince kwame" formControlName="name">
+                        placeholder="Please enter your name" formControlName="name">
                
                 </div>
 
                 <div class="form-group mt-2">
                     <label for="signup-email">{{ 'INPUT_EMAIL_ADDRESS_LABEL'|translate }}</label>
                     <input id="signup-email" type="email" class="form-control"
-                        placeholder="customer@example.com" formControlName="email">
+                        placeholder="Please enter your email" formControlName="email">
                    
                 </div>
                 <div class="form-group mt-3 ">
@@ -71,7 +53,11 @@
                             <label for="signup-password">{{ 'INPUT_PASSWORD_LABEL'|translate }}</label>
                             <input id="signup-password" type="password" class="form-control"
                                 [placeholder]="'INPUT_PASSWORD_PLACEHOLDER'|translate"
-                                formControlName="password">
+                                formControlName="password" [type]='hide ? "password":"text"' autocomplete="current-password">
+                                <div class="hidden">
+                                  <span toggle="#password" class="fa fa-eye field-icon toggle-password" *ngIf="!hide" (click)="togglePass()" ></span>
+                                  <span toggle="#password" class="fa fa-eye-slash  field-icon toggle-password"*ngIf="hide" (click)="togglePass()" ></span>
+                              </div>
                             <div class="invalid-feedback">
                                
                             </div>
@@ -83,8 +69,11 @@
                                 }}</label>
                             <input id="signup-confirm" type="password" class="form-control"
                                 [placeholder]="'INPUT_PASSWORD_REPEAT_PLACEHOLDER'|translate"
-                                formControlName="password_confirmation">
-                         
+                                formControlName="password_confirmation" [type]='hide ? "password":"text"'>
+                                <div class="hidden">
+                                    <span toggle="#password" class="fa fa-eye field-icon toggle-password" *ngIf="!hide" (click)="togglePass()" ></span>
+                                    <span toggle="#password" class="fa fa-eye-slash  field-icon toggle-password"*ngIf="hide" (click)="togglePass()" ></span>
+                                </div>
                         </div>
                     </div>
 
@@ -94,12 +83,12 @@
              </div>
                       
            
-            <div class="text-center mt-5">
+            <!-- <div class="text-center mt-5">
               <button class="text-center btn btn-primary" mat-button matStepperNext>Next</button>
-            </div>
-      
+            </div> -->
+<!--       
         </mat-step>
-        <mat-step >
+        <mat-step > -->
         
             <div class="company_info" >
 
@@ -150,20 +139,16 @@
 
      
             </div>
-            <div class="text-center mt-5">
-              <button class="btn btn-secondary" mat-button matStepperPrevious>Back</button>
-              <button class="btn btn-primary" mat-button matStepperNext>Next</button>
-            </div>
-
-        </mat-step>
-        <mat-step>
+     
+        <!-- </mat-step>
+        <mat-step> -->
           <div>
             <div class="row mb-3 px-2">
                       
                 <label for="" class="">{{ "INPUT_LOGO"|translate }} </label>
-                <div class="image_preview mb-2 text-center" >
+                <!-- <div class="image_preview mb-2 text-center" >
                     <img [src]="icon_imageData" alt="logo" class="image" *ngIf="icon_imageData">
-                  </div>
+                  </div> -->
                 <input type="file"class="form-control" (change)="OnfileChange($event)" placeholder="Upload file" accept="*">
 
               </div>
@@ -173,9 +158,9 @@
                
                 <label for="" class="">   {{ "INPUT_BANNER"|translate }}</label>
 
-                <div class="image_preview mb-2 text-center" >
+                <!-- <div class="image_preview mb-2 text-center" >
                     <img [src]="banner_imageData" alt="banner"*ngIf="banner_imageData" class="image">
-                </div>
+                </div> -->
                 <input type="file" class="form-control"(change)="Change($event)" placeholder="Upload file" accept="*">
 
               </div>
@@ -193,13 +178,13 @@
            </div>
                
           <div class="text-center ">
-            <button class="btn btn-light mr-2 " mat-button matStepperPrevious>Back</button>
+            
             <button class="btn btn-success" mat-button (click)="register()">Submit</button>
           </div>
-        </mat-step>
+        <!-- </mat-step> -->
 
         </form>
-      </mat-horizontal-stepper>
+      <!-- </mat-horizontal-stepper> -->
     
                         </div>
                     </div>

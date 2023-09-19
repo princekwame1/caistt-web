@@ -45,6 +45,7 @@ login(){
         const userDetails = { id: response.data.business.id, name: response.data.business.business_name, email: response.data.business.email };
         this.cookieService.set('userDetails', JSON.stringify(userDetails));
         localStorage.setItem('user', JSON.stringify( response.data.token));
+        this.authService.loggedIn.next(true);
         this.router.navigate([""]);
     
     
